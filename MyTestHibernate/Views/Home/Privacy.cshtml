@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+
+@model List<Cat>
+
+<div>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Weight</td>
+                <td>Id</td>
+                <td>Sex</td>
+            </tr>
+        </thead>
+        @foreach (Cat custvar in Model)
+        {
+            <tr>
+                <td>@custvar.Name</td>
+                <td>@custvar.Weight</td>
+                <td>@custvar.Id</td>
+                <td>@custvar.Sex</td>
+            </tr>
+        }
+    </table>
+</div>

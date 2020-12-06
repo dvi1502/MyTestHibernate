@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTestHibernate", "MyTestHibernate\MyTestHibernate.csproj", "{468A83CC-B979-4466-AD57-8DC7F81EE99D}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MyTestHibernateDB", "MyTestHibernateDB\MyTestHibernateDB.sqlproj", "{3FB57FD9-A871-45E3-AE08-15044749C4EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{468A83CC-B979-4466-AD57-8DC7F81EE99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468A83CC-B979-4466-AD57-8DC7F81EE99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468A83CC-B979-4466-AD57-8DC7F81EE99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468A83CC-B979-4466-AD57-8DC7F81EE99D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FB57FD9-A871-45E3-AE08-15044749C4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB57FD9-A871-45E3-AE08-15044749C4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB57FD9-A871-45E3-AE08-15044749C4EF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3FB57FD9-A871-45E3-AE08-15044749C4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB57FD9-A871-45E3-AE08-15044749C4EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FB57FD9-A871-45E3-AE08-15044749C4EF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB59093A-ACD6-44DE-8FF8-CD60D6ED05A7}
+	EndGlobalSection
+EndGlobal

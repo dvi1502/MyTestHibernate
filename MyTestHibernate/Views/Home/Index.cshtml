@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@model List<Book>
+
+@{
+    //var books = new List<Book>()
+    //{
+    //    new Book() { Title = "Rahul", Description = "Bangalore" },
+    //    new Book() { Title = "Sachin", Description = "Mumbai" }
+    //};
+
+    //var books = (List<Book>)ViewData["Books"]; // Cast the list
+
+}
+
+<div>
+    <table border="1">
+        <thead>
+            <tr><td>Title</td><td>Description</td></tr>
+        </thead>
+        @foreach (Book custvar in Model)
+        {
+            <tr>
+                <td>@custvar.Title</td>
+                <td>@custvar.Description</td>
+            </tr>
+        }
+    </table>
+</div>
+
+
+
