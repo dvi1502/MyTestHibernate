@@ -19,9 +19,9 @@ values
 
 
 truncate table Cat;
-insert into Cat (id,name,sex,weight)
+insert into Cat (name,sex,weight)
 values
-(CONVERT(char(38),NEWID()),N'Вася',N'M',5.25),
-(CONVERT(char(38),NEWID()),N'Барсик',N'M',3.70),
-(CONVERT(char(38),NEWID()),N'Сема',N'M',8.25),
-(CONVERT(char(38),NEWID()),N'Мурка',N'Ж',3.125);
+(N'Вася',N'M',5.25),
+(N'Барсик',N'M',3.70),
+(N'Сема',N'M',8.25),
+(N'Мурка',N'Ж',3.125);

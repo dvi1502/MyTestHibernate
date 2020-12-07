@@ -8,17 +8,16 @@ using System.Threading.Tasks;
 namespace MyTestHibernate.Models
 {
     [Class]
-    [Table("dbo.Book")]
-    
+    [Table("dbo.book")]
     public class Book
     {
         [Id(0, Name = "Id")]
-        [Generator(1, Class = "native")] 
-        public virtual int Id { get; set; }
-        
-        [Property]
+        [Generator(1, Class = "native")]
+        public virtual int Id {get; set; }
+
+        [Property] 
         public virtual string Title { get; set; }
-        
+
         [Property] 
         public virtual string Description { get; set; }
         

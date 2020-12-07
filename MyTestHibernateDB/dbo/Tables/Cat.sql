@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Cat]
 (
-	[Id] char(38) NOT NULL PRIMARY KEY,
+	[Id] int NOT NULL PRIMARY KEY identity(1,1),
 	[Name] nvarchar(16) NOT NULL,
 	[Sex] nchar(1),
 	[Weight] real

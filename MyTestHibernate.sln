@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTestHibernate", "MyTestHi
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MyTestHibernateDB", "MyTestHibernateDB\MyTestHibernateDB.sqlproj", "{3FB57FD9-A871-45E3-AE08-15044749C4EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationTestFluence", "WebApplicationTestFluence\WebApplicationTestFluence.csproj", "{FB373C9E-6072-4005-BBEA-208E4AE06827}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{3FB57FD9-A871-45E3-AE08-15044749C4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FB57FD9-A871-45E3-AE08-15044749C4EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3FB57FD9-A871-45E3-AE08-15044749C4EF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FB373C9E-6072-4005-BBEA-208E4AE06827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB373C9E-6072-4005-BBEA-208E4AE06827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB373C9E-6072-4005-BBEA-208E4AE06827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB373C9E-6072-4005-BBEA-208E4AE06827}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

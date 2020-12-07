@@ -31,8 +31,11 @@ namespace MyTestHibernate
 
 
             HbmSerializer.Default.Validate = true;
+
             var stream = HbmSerializer.Default.Serialize(Assembly.GetAssembly(typeof(Book)));
             configuration.AddInputStream(stream);
+
+
             ISessionFactory _sessionFactory = configuration.BuildSessionFactory();
 
             //Позволяет Nhibernate самому создавать в БД таблицу и поля к ним. 
