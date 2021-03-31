@@ -29,16 +29,22 @@ namespace WebApplicationTestFluence
         {
             var connStr = Configuration.GetConnectionString("DefaultConnection");
 
+#if DEBUG
             var _sessionFactory = Fluently.Configure()
                                       .Database(MsSqlConfiguration.MsSql2012.ConnectionString(connStr).ShowSql())
                                       //.Mappings(m => m.FluentMappings.AddFromAssemblyOf<CatMap>())
                                       .Mappings(m => m.FluentMappings.AddFromAssembly(GetType().Assembly))
                                       .BuildSessionFactory();
 
-            
+#else
+            var _sessionFactory = Fluently.Configure()
+                                      .Database( MsSqlConfiguration.MsSql2012.ConnectionString(connStr) )
+                                      .Mappings(m => m.FluentMappings.AddFromAssembly(GetType().Assembly))
+                                      .BuildSessionFactory();
+#endif            
+
             services.AddSingleton(_sessionFactory);
             services.AddScoped(factory => _sessionFactory.OpenSession());
-
             services.AddControllersWithViews();
         }
 
